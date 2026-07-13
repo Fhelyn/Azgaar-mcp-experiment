@@ -16,7 +16,9 @@ This is an experimental fork of [Azgaar's Fantasy Map Generator](https://github.
 4. Connect Claude Desktop to local MCP server via config pointing to `mcp-Azgaar/`
 
 ### Known Issues / Help Wanted
-We need help with coordinate synchronization.
+We need help with coordinate synchronization. See full breakdown in [#1](../../issues/1)
+
+> **Active Bug:** [Coordinate desync between Lidar, Search Marker, and WASM Layer](../../issues/1) - help wanted!
 
 **1. Lidar Coordinate Mismatch**
 The custom Lidar button I added in `index.html` reports a different cursor position than Azgaar's internal coordinate system. Claude reads one set of coordinates, but the actual cursor position on screen is different. There is a desync between `cursor coords`, `Azgaar internal coords`, and `Claude-detected coords`.
