@@ -1,0 +1,14 @@
+.vscode
+.idea
+.claude/worktrees
+/node_modules
+*/node_modules
+/dist
+/coverage
+/playwright-report
+/test-results
+/_bmad
+/_bmad-output
+/memory
+.github/agents/bmad-*
+.github/prompts/bmad-*
