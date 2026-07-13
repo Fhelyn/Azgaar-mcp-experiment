@@ -26,5 +26,5 @@ The custom Lidar button I added in `index.html` reports a different cursor posit
 **2. Region Search Marker Drift on Zoom**
 The region search feature is not accurate when zoomed. The auto-search triggers correctly and shows a red circle marker, but the marker fails to follow SVG transform changes during zoom/pan.
 
-**3. Stale Map Data Name Desync**
-When loading an old map import, the displayed name on screen does not match the data queried by Claude. Example: Label on screen shows `Ajan`, but Claude detects it as `Caan`. The rendered layer and the data layer are out of sync, likely due to slow or stale data loading from imported maps.
+**3. Stale Map Data / Name Desync on Imported Maps**
+When loading an old .map file, the rendered label and the underlying data become out of sync. For example, the map visually shows `Ajan`, but Claude / the MCP tool queries the data as `Caan`. Searching for Caan works and finds the feature, but upon selection the UI displays `Ajan`, while searching for `Ajan` returns no result. This suggests the render layer is showing stale cached data, while the data layer contains the correct value from the imported file
