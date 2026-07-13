@@ -1,0 +1,7 @@
+*.wasm linguist-vendored
+*.bat linguist-vendored=false
+*.cpp linguist-detectable=true
+*.h linguist-detectable=true
+*.hpp linguist-detectable=true
+map/** linguist-vendored=false
+mcp-Azgaar/** linguist-detectable=true
